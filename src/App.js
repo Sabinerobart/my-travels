@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './travel.png';
 import './App.css';
 
-import Travel from "./Travel";
+import Travels from "./Travels";
 
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">My Travels</h1>
         </header>
-        <Travel />
+        <Travels />
       </div>
     );
   }

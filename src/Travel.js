@@ -1,9 +1,15 @@
 import React from "react";
-import Travels from "./Travels";
 
+const Travel = ({destination, country, photo, distance, alt})=> {
+    return (
+        <div>
+        <p></p>
+        <img src={photo} alt={alt} width="50%"/>
+        <h2>{destination}, {country}</h2>
+        <p>{distance}</p>
+    </div>
+    )
+}
 
-const Travel = ()=> (
-    <Travels />
-);
 
 export default Travel;

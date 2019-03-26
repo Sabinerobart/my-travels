@@ -1,4 +1,5 @@
 import React from "react";
+import Travel from "./Travel";
 import img1 from "./49c069bb-8a54-4ded-81f0-e463ef6c66da.hw1.jpeg";
 import img2 from "./1280px-1_bali_rice_terrace_2011.jpeg";
 import img3 from "./rome.jpg";
@@ -46,15 +47,8 @@ const tab = [
   const Travels = () => {
       return (
           <div>
-              {tab.map( (i) => {
-                  return (
-                    <div>
-                        <p></p>
-                        <img src={i.photo} alt={i.alt} width="50%"/>
-                        <h2>{i.destination}, {i.country}</h2>
-                        <p>{i.distance}</p>
-                    </div>
-                  )
+              {tab.map( (travel,idx) => {
+                  return (<Travel key={idx} {...travel}/>)
               })}
           </div>
       );
